@@ -1,15 +1,14 @@
-# R
+# R Cheatsheet
 
-# Data Types
-
-## Basic Data Types
+## Data Types
+### Basic Data Types
 - Numeric (Float/Double): 10.5, 5e-06
 - Integer: 3, -3, 7L
 - Complex: 2+3i, complex(real=2, imaginary=3)
 - Logical: TRUE, FALSE, T, F
 - Character: “a”, “2.718”
 
-## Vector
+### Vector
 - A **vector** is a sequence of elements of the same basic data type
 - Construction: using c(), :, rep(), seq(), output of a function
 
@@ -25,7 +24,7 @@ v <- sample(1:5, size=10, replace=TRUE)
 - Assign names to vector: names(v) <- c(‘x’, ‘y’, ‘z’, ‘a’, ‘b’, ...)
 - Indexing (index starts with 1 instead of 0)
 
-## List
+### List
 - A **list** is a sequence of objects of different data types and lengths.
 - Construction: using list()
     - L <- list(5, c(1,2,3), matrix(rep(2,6),2,3), list(5, “abc”))
@@ -36,7 +35,7 @@ v <- sample(1:5, size=10, replace=TRUE)
     - L[1] # 5
     - L["num"] or L$num # 5
 
-## Data Frame
+### Data Frame
 - A **data frame** is a list of vectors (of different data types) of equal
 length.
 - It is used for storing data table. The vectors are the columns of the
@@ -44,15 +43,15 @@ table.
 - Construction: data.frame(), read.table(), read.xls(), read.csv()
 
 
-# Data Frame Operations
+## Data Frame Operations
 
-## Naming
+### Naming
 ```r
 names(df) <- c(‘x’, ‘y’, ‘z’, ‘a’, ‘b’, ...) 
 names(v)[4] <- “tom”
 ```
 
-## Indexing
+### Indexing
 ```r
 # Single Indexing
 df[2,3] # get the element located at (row=2,col=3)
@@ -76,7 +75,7 @@ df[,-1] # get all columns except the first column
 ```
 
 
-# Loop and Condition
+## Loop and Condition
 ```r
 for (i in 1:5){
 	print(i)
@@ -92,7 +91,7 @@ if(condition){
 }
 ```
 
-# Function
+## Function
 
 ```r
 testFunc <- function(x) print(x)
@@ -105,7 +104,7 @@ function_name <- function(arguments){
 }
 ```
 
-# Useful functions
+## Useful functions
 
 - length: get the length of object
 - head(obj, n=10): get the first 10 elements of obj
