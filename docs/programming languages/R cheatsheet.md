@@ -6,14 +6,14 @@
 - Integer: 3, -3, 7L
 - Complex: 2+3i, complex(real=2, imaginary=3)
 - Logical: TRUE, FALSE, T, F
-- Character: “a”, “2.718”
+- Character: "a", "2.718"
 
 ### Vector
 - A **vector** is a sequence of elements of the same basic data type
 - Construction: using c(), :, rep(), seq(), output of a function
 
 ```r
-x <- c(1,2,3,5.5), x <- c(“a”, “b”, “abc”), x <- c(T, F, F, T)
+x <- c(1,2,3,5.5), x <- c("a", "b", "abc"), x <- c(T, F, F, T)
 y <- 10:15 # unit spacing
 y <- rep(2,6) # 2 2 2 2 2 2
 z <- seq(0,1,by=0.2) # spacing by 0.2, 0.0 0.2 0.4 0.6 0.8 1.0
@@ -27,7 +27,7 @@ v <- sample(1:5, size=10, replace=TRUE)
 ### List
 - A **list** is a sequence of objects of different data types and lengths.
 - Construction: using list()
-    - L <- list(5, c(1,2,3), matrix(rep(2,6),2,3), list(5, “abc”))
+    - L <- list(5, c(1,2,3), matrix(rep(2,6),2,3), list(5, "abc"))
     - L becomes a sequence of a number, vector, matrix and list
 - Naming (similar to vectors)
     - names(L) <- c("num", "vec", "mat", "list")
@@ -48,7 +48,7 @@ table.
 ### Naming
 ```r
 names(df) <- c(‘x’, ‘y’, ‘z’, ‘a’, ‘b’, ...) 
-names(v)[4] <- “tom”
+names(v)[4] <- "tom"
 ```
 
 ### Indexing
@@ -66,7 +66,7 @@ df$age # get the age column
 # Segement Indexing
 df[1:10,] # get the first 10 rows with all columns
 df[c(r1, r2, ..), c(c1, c2, ..)] # gives the sub-matrix/sub-dataframe of selected rows and columns
-df[c(T, F, T, ..), c(F, F, T, ..)] # gives the sub-matrix /sub-dataframe for selected rows and columns corresponding to the “T” values
+df[c(T, F, T, ..), c(F, F, T, ..)] # gives the sub-matrix /sub-dataframe for selected rows and columns corresponding to the "T" values
 df[df[,2]<40, ] # gives the sub-matrix /sub-dataframe with those rows whose 2nd column is less than 40
 df$age[df$age<40] <- 30 # setting with selective indexing
 
