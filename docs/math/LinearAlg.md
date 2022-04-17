@@ -1,3 +1,6 @@
+---
+use_math: true
+---
 # Linear Algebra
 
 # Vector
