@@ -4,7 +4,7 @@
 
 ### Convention
 
-- All vectors are column vectors by default
+- All vectors are column vectors by default $$\forall x \in R$$
 
 ### Length (norm)
 
@@ -160,7 +160,7 @@ $$
         
     - Each row of *C* is a linear combination of the rows of *B*
         
-        ![Untitled](assets/math/LinearAlg6.png)
+        ![Untitled](/assets/math/LinearAlg6.png)
         
 - Properties
     - Associative: $$A(BC)=(AB)C$$
