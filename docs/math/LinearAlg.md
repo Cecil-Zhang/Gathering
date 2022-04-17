@@ -31,7 +31,7 @@
         - $\vec{v}+\vec{w}\in V, \qquad a\cdot \vec{v} \in V$
     - The operations `+` and `.` must satisfy the following axioms
         
-        ![Untitled](math/Untitled.png)
+        ![Untitled](math/LinearAlg0.png)
         
     - Example:
         - $\mathbb{R}^n$ is a vector space.
@@ -73,7 +73,7 @@ $$
     - For many problems, the key solution step is transforming into the right basis
 - Given a basis $\{\vec{v_1},\dots,\vec{v_n}\}$ for ***V***, there is a unique way to write any $\tilde{\vec{v}}\in V$ as: $\tilde{\vec{v}}=\alpha_1\vec{v_1}+\alpha_2\vec{v_2}+\dots+\alpha_n\vec{v_n}$
 
-![Untitled](math/Untitled%201.png)
+![Untitled](math/LinearAlg1.png)
 
 ### Dimension
 
@@ -136,13 +136,13 @@ $$
 - $\vec{a}=A\vec{b}$
     - Assume $\hat{e_1},\dots,\hat{e_n}$ is the basis of vector space of $\vec{b}$, then each column of ***A*** is where the transformed vectors of $\hat{e_1},\dots,\hat{e_n}$ landed in the vector space of $\vec{a}$ (i.e. forming a basis)
     
-    ![Untitled](math/Untitled%202.png)
+    ![Untitled](math/LinearAlg2.png)
     
     - Example
         
-        ![Untitled](math/Untitled%203.png)
+        ![Untitled](math/LinearAlg3.png)
         
-        ![Untitled](math/Untitled%204.png)
+        ![Untitled](math/LinearAlg4.png)
         
 
 # Matrix
@@ -156,11 +156,11 @@ $$
 - The matrix multiplication operation $C=AB$ is defined as: $c_{ij}=\sum_{k=1}^m a_{ik}b_{kj}$
     - Each column of C is a linear combination of the columns of A
         
-        ![Untitled](math/Untitled%205.png)
+        ![Untitled](math/LinearAlg5.png)
         
     - Each row of *C* is a linear combination of the rows of *B*
         
-        ![Untitled](math/Untitled%206.png)
+        ![Untitled](math/LinearAlg6.png)
         
 - Properties
     - Associative: $A(BC)=(AB)C$
@@ -317,7 +317,7 @@ $$
     - $p=\infty\implies \|x\|_\infty=\max_{1\leq i\leq m}|x_i|$
     - The geometry of vector norms
         
-        ![Untitled](math/Untitled%207.png)
+        ![Untitled](math/LinearAlg7.png)
         
 - Nice Property of 2-norm
     - invariance under unitary transformation: $\|Qx\|_2=\|x\|_2$ if $Q^HQ=I$
@@ -386,11 +386,11 @@ $$
 - Factor a matrix $A\in \mathbb{C}^{m\times m}$ into the form: *A=LU*, where *L* is lower triangular and *U* is upper triangular.
     - The algorithm is Gaussian elimination in matrix form
     
-    ![Untitled](math/Untitled%208.png)
+    ![Untitled](math/LinearAlg8.png)
     
 - Gaussian Elimination
     
-    ![Untitled](math/Untitled%209.png)
+    ![Untitled](math/LinearAlg9.png)
     
 
 ### Pivoting
@@ -430,7 +430,7 @@ $$
 - Let $A\in \mathbb{R}^{m\times n}$ with m ≥ n and rank(A) = n. Then there exists an orthogonal matrix $Q\in \mathbb{R}^{m\times n} (Q^TQ=I)$, and an upper triangular matrix $R\in \mathbb{R}^{n\times n}$ such that $A=QR$
 - QR decomposition is Gram-Schmidt orthogonalization process in matrix form
 
-![Untitled](math/Untitled%2010.png)
+![Untitled](math/LinearAlg10.png)
 
 ### Application
 
@@ -452,7 +452,7 @@ $$
 
 - A square matrix $A\in \mathbb{C}^{n\times n}$ is **diagonalizable** if and only if $A=X\Lambda X^{-1}$, where $\Lambda$ is a diagonal matrix and X is nonsingular.
 
-![Untitled](math/Untitled%2011.png)
+![Untitled](math/LinearAlg11.png)
 
 - Not always exists
 
