@@ -197,7 +197,7 @@ $$$$
 ### Range / Column Space
 
 - The **range / column space** of $A\in\mathbb{R}^{m\times n}$ is the image of $$\mathbb{R}^n$$ under ***A***
-    - $$\text{range(A)}:=\{{A\bold{x}|\bold{x}\in}\mathbb{R}^{n}\}$$, , i.e. the set of all possible outputs of ***Ax***
+    - $$\text{range(A)}:=\lbrace{A\bold{x}|\bold{x}\in}\mathbb{R}^{n}\rbrace$$, i.e. the set of all possible outputs of ***Ax***
 
 ### Matrix Rank
 
