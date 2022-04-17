@@ -8,30 +8,30 @@
 
 ### Length (norm)
 
-- $$\|\vec{a}\|_2=\sqrt{a_1^2+\cdots+a_n^2}=\sqrt{\vec{a}\cdot\vec{a}}$$ is called the length of a vector $$$\vec{a}$$$
+- $$\|\vec{a}\|_2=\sqrt{a_1^2+\cdots+a_n^2}=\sqrt{\vec{a}\cdot\vec{a}}$$ is called the length of a vector $$\vec{a}$$
 
 ### Angle
 
-- The angle between two vectors is $$$\theta=\arccos\frac{\vec{a}\cdot\vec{b}}{\|\vec{a}\|_2\|\vec{b}\|_2}$$$
+- The angle between two vectors is $$\theta=\arccos\frac{\vec{a}\cdot\vec{b}}{\|\vec{a}\|_2\|\vec{b}\|_2}$$
 
 ### Dot Product
 
-- For $\vec{a}=(a_1,\dots,a_n), \vec{b}=(b_1,\dots,b_n)\in\mathbb{R}^n$, $$$\vec{a}\cdot\vec{b}=\sum_{i=1}^na_ib_i$$$
+- For $$\vec{a}=(a_1,\dots,a_n), \vec{b}=(b_1,\dots,b_n)\in\mathbb{R}^n$$, $$\vec{a}\cdot\vec{b}=\sum_{i=1}^na_ib_i$$
 
 ### Null Space
 
-- $$$null(A)=\{x|Ax=0\}$$$
+- $$null(A)=\{x|Ax=0\}$$
 
 ## Vector Space
 
 ### Vector Space
 
 - A **vector space** ***V = {a collection of vectors $$\vec{v}$$}*** satisfies
-    - All $\vec{v},\vec{w}\in V$ can be added and multiplied by $a\in \mathbb{R}$:
-        - $\vec{v}+\vec{w}\in V, \qquad a\cdot \vec{v} \in V$
+    - All $$\vec{v},\vec{w}\in V$ can be added and multiplied by $a\in \mathbb{R}$$:
+        - $$\vec{v}+\vec{w}\in V, \qquad a\cdot \vec{v} \in V$$
     - The operations `+` and `.` must satisfy the following axioms
         
-        ![Untitled](math/LinearAlg0.png)
+        ![Untitled](/math/LinearAlg0.png)
         
     - Example:
         - $$\mathbb{R}^n$$ is a vector space.
