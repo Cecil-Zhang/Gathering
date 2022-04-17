@@ -92,15 +92,15 @@ $$\begin{bmatrix}a&b\\c&c\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=x\begin{b
 
 - Given two vector spaces $V, V’$, **Linear transformation** is a mapping/function $L:V\to V’$ such that
     
-    $$$$
+    $$
     L(\alpha \vec{v}+\beta \vec{u})=\alpha L(\vec{v})+\beta L(\vec{u})\quad \forall \vec{v},\vec{u} \in V
-    $$$$
+    $$
     
 - Given a basis $$\{\vec{v_1},\dots,\vec{v_n}\}$$ for ***V***, we have
     
-    $$$$
+    $$
     L(c_1\vec{v_1}+\dots+c_n\vec{v_n})=c_1L(\vec{v_1})+\dots+c_nL(\vec{v_n})
-    $$$$
+    $$
     
 
 ### Representation of Linear Transformation
@@ -108,7 +108,7 @@ $$\begin{bmatrix}a&b\\c&c\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=x\begin{b
 - All linear maps $L: \mathbb{R}^n\to \mathbb{R}^m$ can be expressed as $$L(\vec{v})=A\vec{v}$$
 - Evaluating the coordinates of $$L(\vec{v})$$ in basis ***C*** for an arbitrary $$\vec{v}$$
 
-$$$$
+$$
 \begin{equation}
 \begin{split}   [L(\vec{v})]_C &=[L(x_1\vec{v_1}+\dots+x_n\vec{v_n})]_C\\
       &=\sum_{j=1}^n x_j[L(\vec{v_j})]_C=\sum_{j=1}^n\begin{bmatrix}
@@ -129,7 +129,7 @@ $$$$
 &:=A[\vec{v}]_B
 \end{split}
 \end{equation}
-$$$$
+$$
 
 ### Interpretation of Matrix-Vector Multiplication
 
@@ -151,7 +151,7 @@ $$$$
 
 ### Matrix Multiplication
 
-- Let $A\in\mathbb{R}^{p\times m}$ and $B\in\mathbb{R}^{m\times n}$.
+- Let $$A\in\mathbb{R}^{p\times m}$ and $B\in\mathbb{R}^{m\times n}$$.
 - The matrix dimension should match!
 - The matrix multiplication operation $$C=AB$$ is defined as: $c_{ij}=\sum_{k=1}^m a_{ik}b_{kj}$
     - Each column of C is a linear combination of the columns of A
@@ -160,7 +160,7 @@ $$$$
         
     - Each row of *C* is a linear combination of the rows of *B*
         
-        ![Untitled](math/LinearAlg6.png)
+        ![Untitled](assets/math/LinearAlg6.png)
         
 - Properties
     - Associative: $$A(BC)=(AB)C$$
