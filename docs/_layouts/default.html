@@ -1,5 +1,12 @@
-<head>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
     {% if page.use_math %}
     {% include mathjax_support.html %}
     {% endif %}
-</head>
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>
