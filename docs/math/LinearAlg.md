@@ -1,9 +1,5 @@
----
-layout: default
-use_math: true
----
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
             tex2jax: {
@@ -37,7 +33,7 @@ use_math: true
 
 ### Null Space
 
-- $$null(A)=\{x|Ax=0\}$$
+- $null(A)=\{x|Ax=0\}$
 
 ## Vector Space
 
@@ -48,7 +44,7 @@ use_math: true
         - $$\vec{v}+\vec{w}\in V, \qquad a\cdot \vec{v} \in V$$
     - The operations `+` and `.` must satisfy the following axioms
         
-        ![Untitled](/math/LinearAlg0.png)
+        ![Untitled](/assets/math/LinearAlg0.png)
         
     - Example:
         - $$\mathbb{R}^n$$ is a vector space.
