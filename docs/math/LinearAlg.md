@@ -44,7 +44,7 @@
         - $$\vec{v}+\vec{w}\in V, \qquad a\cdot \vec{v} \in V$$
     - The operations `+` and `.` must satisfy the following axioms
         
-        ![Untitled](/assets/images/math/LinearAlg0.png)
+        ![Untitled]({{ base_url }}/assets/images/math/LinearAlg0.png)
         
     - Example:
         - $$\mathbb{R}^n$$ is a vector space.
