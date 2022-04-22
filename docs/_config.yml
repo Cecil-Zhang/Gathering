@@ -1,2 +1,13 @@
-theme: minimal-mistakes-jekyll
-base_url: /Gathering
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
