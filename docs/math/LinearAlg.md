@@ -1,6 +1,15 @@
----
-use_math: true
----
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            }
+        });
+    </script>
+</head>
 
 # Linear Algebra
 
@@ -35,7 +44,7 @@ use_math: true
         - $$\vec{v}+\vec{w}\in V, \qquad a\cdot \vec{v} \in V$$
     - The operations `+` and `.` must satisfy the following axioms
         
-        ![Untitled](assets/math/LinearAlg0.png)
+        ![Untitled](/assets/images/math/LinearAlg0.png)
         
     - Example:
         - $$\mathbb{R}^n$$ is a vector space.
