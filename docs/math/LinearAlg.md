@@ -89,7 +89,7 @@ $$
     - For many problems, the key solution step is transforming into the right basis
 - Given a basis $$\{\vec{v_1},\dots,\vec{v_n}\}$$ for ***V***, there is a unique way to write any $$\tilde{\vec{v}}\in V$$ as: $$\tilde{\vec{v}}=\alpha_1\vec{v_1}+\alpha_2\vec{v_2}+\dots+\alpha_n\vec{v_n}$$
 
-![Untitled1]({{ baseurl }}/assets/images/math/LinearAlg1.png)
+![Untitled1]({{ base_url }}/assets/images/math/LinearAlg1.png)
 
 ### Dimension
 
