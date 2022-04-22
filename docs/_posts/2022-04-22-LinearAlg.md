@@ -18,8 +18,6 @@ toc: true
     </script>
 </head>
 
-# Linear Algebra
-
 # Vector
 
 ### Convention
@@ -173,14 +171,14 @@ $$
 
 - Let $$A\in\mathbb{R}^{p\times m}$$ and $$B\in\mathbb{R}^{m\times n}$$.
 - The matrix dimension should match!
-- The matrix multiplication operation $$C=AB$$ is defined as: $$c_{ij}=\sum_{k=1}^m a_{ik}b_{kj}$
+- The matrix multiplication operation $$C=AB$$ is defined as: $$c_{ij}=\sum_{k=1}^m a_{ik}b_{kj}$$
     - Each column of C is a linear combination of the columns of A
         
         ![Untitled]({{ base_url }}/assets/images/math/LinearAlg5.png)
         
     - Each row of *C* is a linear combination of the rows of *B*
         
-        ![Untitled]({{ base_url }}/assets/math/LinearAlg6.png)
+        ![Untitled]({{ base_url }}/assets/images/math/LinearAlg6.png)
         
 - Properties
     - Associative: $$A(BC)=(AB)C$$
@@ -217,7 +215,8 @@ $$
 ### Range / Column Space
 
 - The **range / column space** of $$A\in\mathbb{R}^{m\times n}$$ is the image of $$\mathbb{R}^n$$ under ***A***
-    - $$\text{range(A)}:=\lbrace{A\bold{x}|\bold{x}\in}\mathbb{R}^{n}\rbrace$$ , i.e. the set of all possible outputs of ***Ax***
+    - $$\text{range(A)}:=\lbrace{A\vec{x}|\vec{x}\in}\mathbb{R}^{n}\rbrace$$
+    - i.e. the set of all possible outputs of ***Ax***
 
 ### Matrix Rank
 
@@ -268,14 +267,14 @@ $$
 
 ### Identity Matrix
 
-$$$$
+$$
 I_n=[\vec{e_1},\dots,\vec{e_n}]=\begin{bmatrix}
    1 & 0 & \dots & 0 \\
    0 & 1 & \ddots & \vdots \\
    \vdots & \ddots & \ddots & 0 \\
    0 & \dots & 0 & 1
 \end{bmatrix} \text{ such that } I_n\vec{v}=\vec{v}
-$$$$
+$$
 
 ### Triangular Matrix
 
@@ -287,7 +286,7 @@ $$$$
 
 ### Positive Definite Matrix
 
-- A is positive definite if  $$A^T=A\text{ and }x^TAx>0,\forall x\neq 0$
+- A is positive definite if  $$A^T=A\text{ and }x^TAx>0,\forall x\neq 0$$
 
 ### Symmetric Matrix
 
@@ -297,8 +296,8 @@ $$$$
 
 - $$A^H=(\bar{A})^T$$
 - Compare to Symmetric
-    - Symmetric for matrices $$\in\mathbb{R}^{m\times n}$
-    - Hermitian for matrices $$\in\mathbb{C}^{m\times n}$
+    - Symmetric for matrices $$\in\mathbb{R}^{m\times n}$$
+    - Hermitian for matrices $$\in\mathbb{C}^{m\times n}$$
 
 ### Orthogonal Matrix
 
@@ -310,8 +309,8 @@ $$$$
 
 - Matrix $$A\in\mathbb{C}^{n\times n}$$ is unitary if $$A^HA=AA^H=I$$
 - Compare to Orthogonal
-    - Orthogonal matrices $$\in\mathbb{R}^{m\times n}$
-    - Unitary matrices $$\in\mathbb{C}^{m\times n}$
+    - Orthogonal matrices $$\in\mathbb{R}^{m\times n}$$
+    - Unitary matrices $$\in\mathbb{C}^{m\times n}$$
 
 # Norm
 
@@ -323,18 +322,18 @@ $$$$
 
 - A **vector** **norm** on $$\mathbb{C}^n$$ is a mapping that maps each $$\vec{x}\in\mathbb{C}^n$$ to a real number $$\|\vec{x}\|\in\mathbb{R}$$satisfying the following properties:
     - Positive Definite Property: $$\|\vec{x}\|>0\text{ for } \vec{x}\neq\vec{0} \text{ and } \|\vec{0}\|=0$$
-    - Absolute Homogeneity: $$\|\alpha \vec{x}\|=|\alpha|\|\vec{x}\|$$ for $$\alpha\in\mathbb{C}$$$
+    - Absolute Homogeneity: $$\|\alpha \vec{x}\|=\vert\alpha\vert\|\vec{x}\| \forall \alpha \in \mathbb{C}$$
     - Triangle inequality: $$\|\vec{x}+\vec{y}\|\leq\|\vec{x}\|+\|\vec{y}\|$$
 
 ### p-norm
 
 - **Vector p-norm**
-    - Let $$p\in\mathbb{R}$$ and $$1\leq p \leq \infty$$, define $$\|\vec{x}\|_p=(\sum_{i=1}^m|x_i|^p)^{\frac{1}{p}}$$
+    - Let $$p\in\mathbb{R}$$ and $$1\leq p \leq \infty$$, define $$\|\vec{x}\|_p=(\sum_{i=1}^m\vert x_i\vert^p)^{\frac{1}{p}}$$
     - Then $$\|\vec{x}\|_p$$ is a norm and is called the vector p-norm.
 - Frequently used norms
-    - “Taxicab” or “Manhattan distance”: $$p=1\implies \|\vec{x}\|_1=\sum_{i=1}^m|x_i|$$
-    - “Euclidean length”: $$p=2\implies \|\vec{x}\|_2=\sqrt{\sum_{i=1}^m|x_i|^2}=\sqrt{\vec{x}^H\vec{x}}$$
-    - $$p=\infty\implies \|x\|_\infty=\max_{1\leq i\leq m}|x_i|$$
+    - “Taxicab” or “Manhattan distance”: $$p=1\implies \|\vec{x}\|_1=\sum_{i=1}^m\vert x_i\vert$$
+    - “Euclidean length”: $$p=2\implies \|\vec{x}\|_2=\sqrt{\sum_{i=1}^m\vert x_i\vert^2}=\sqrt{\vec{x}^H\vec{x}}$$
+    - $$p=\infty\implies \|x\|_\infty=\max_{1\leq i\leq m}\vert x_i\vert$$
     - The geometry of vector norms
         
         ![Geometry]({{ base_url }}/assets/images/math/LinearAlg7.png)
@@ -357,7 +356,7 @@ $$$$
 
 - A matrix **norm** on $$\mathbb{C}^{m\times n}$$ is a mapping that maps each $$A\in\mathbb{C}^{m\times n}$$ to a real number $$\|A\|\in\mathbb{R}$$satisfying the following properties:
     - Positive Definite Property: $$\|A\|>0\text{ for } A\neq\vec{0} \text{ and } \|{0}\|=0$$
-    - Absolute Homogeneity: $$\|\alpha A\|=|\alpha|\|A\|$$ for $$\alpha\in\mathbb{C}$$
+    - Absolute Homogeneity: $$\|\alpha A\|=\vert\alpha\vert\|A\|$$ for $$\alpha\in\mathbb{C}$$
     - Triangle inequality: $$\|A+B\|\leq\|A\|+\|B\|$$
     - *Consistency: $$\|AB\|\leq \|A\|\|B\|$$
 
@@ -366,7 +365,7 @@ $$$$
 **Induced Matrix Norm**: A vector norm $$\|\cdot\|$$ induces a matrix norm, denoted by
 
 $$
-\|A\|_{(m,n)}:=\max_{\substack{\bold x\in \mathbb{C}^n\\\bold x\neq \bold 0}}\frac{\|A\bold x\|_{(m)}}{\|\bold x\|_{(n)}}=\max_{\substack{\bold x\in \mathbb{C}^n\\\|\bold x\|_{(n)}=1}} \|A\bold x\|_{(m)}
+\|A\|_{(m,n)}:=\max_{\substack{\vec x\in \mathbb{C}^n\\\vec x\neq \vec 0}}\frac{\|A\vec x\|_{(m)}}{\|\vec x\|_{(n)}}=\max_{\substack{\vec x\in \mathbb{C}^n\\\|\vec x\|_{(n)}=1}} \|A\vec x\|_{(m)}
 $$
 
 - Property: $$\|Ax\|\leq \|A\|\|x\|$$. Therefore, $$\|A\|$$ is the maximal factor by which ***A*** can “stretch” a vector.
@@ -380,9 +379,9 @@ $$
 $$
 
 - **Matrix p-norms**
-    - $$\|A\|_1=\max_{\vec{x}\neq 0}\frac{\|A\vec x\|_1}{\|\vec x\|_1}=\max_{1\leq j\leq n}\{\sum_{i=1}^m|a_{ij}|\}$$ = max absolute column sum
+    - $$\|A\|_1=\max_{\vec{x}\neq 0}\frac{\|A\vec x\|_1}{\|\vec x\|_1}=\max_{1\leq j\leq n}\{\sum_{i=1}^m\vert a_{ij}\vert\}$$ = max absolute column sum
     - $$\|A\|_2=\max_{\vec{x}\neq 0}\frac{\|A\vec x\|_2}{\|\vec x\|_2}=\sqrt{\text{the largest eigenvalue of }A^HA}$$ = the largest singular value of A
-    - $$\|A\|_\infty=\max_{\vec{x}\neq 0}\frac{\|A\vec x\|_\infty}{\|\vec x\|_\infty}=\max_{1\leq i\leq m}\{\sum_{j=1}^n|a_{ij}|\}$$ = max absolute row sum
+    - $$\|A\|_\infty=\max_{\vec{x}\neq 0}\frac{\|A\vec x\|_\infty}{\|\vec x\|_\infty}=\max_{1\leq i\leq m}\{\sum_{j=1}^n\vert a_{ij}\vert\}$$ = max absolute row sum
 
 ### Properties
 
@@ -495,7 +494,7 @@ where
 
 - $$U$$ is an $$m\times m$$ orthogonal matrix $$U^TU=I$$
 - $$V$$ is an $$n\times n$$ orthogonal matrix $$V^TV=I$$
-- $$\Sigma$$ is an $$m\times n$$ diagonal matrix with the ordered nonnegative diagonal elements $$\sigma_1\ge \sigma_2\dots \sigma_r>\sigma_{r+1}=\dots=\sigma_n=0$
+- $$\Sigma$$ is an $$m\times n$$ diagonal matrix with the ordered nonnegative diagonal elements $$\sigma_1\ge \sigma_2\dots \sigma_r>\sigma_{r+1}=\dots=\sigma_n=0$$
 
 Furthermore,
 
@@ -524,19 +523,19 @@ Let *r=rank(A)*, then $$A=U_r\Sigma_r V_r^T$$, where
 - Echkart-Young Theorem (optimal low-rank approximation)
     - Let $$A=U\Sigma V^T$$ be the SVD of A. Then the matrix  $$A_k=E_1+E_2+\dots+E_k$$ is the **best** rank-k approximatin of A. That is,
     
-    $$$$
+    $$
     \min_{rank(B)=k}\|A-B\|=\|A-A_k\|
-    $$$$
+    $$
     
     - where $$k≤ r = rank(A)$
 
 ## Solving Least Squares
 
-- Problem: $$\min_x\|Ax-b\|_2$$ for $$A\in\mathbb{C}^{m\times n},\;m\geq n$
+- Problem: $$\min_x\|Ax-b\|_2$$ for $$A\in\mathbb{C}^{m\times n},\;m\geq n$$
 - Solution
     - Cholesky (normal equations)
-        - $$A^HAx=A^Hb,\quad A^HA=LL^H$
+        - $$A^HAx=A^Hb,\quad A^HA=LL^H$$
     - Reduced QR
-        - $$A=\hat Q\hat R,Ax=b\implies \underbrace{\hat R^H\hat Q^H}_{A^H} \underbrace{\hat Q\hat R}A x=\underbrace{\hat R^H\hat Q^H}{A^H}b\implies \hat Rx=\hat Q^Hb$
+        - $$A=\hat Q\hat R,Ax=b\implies \underbrace{\hat R^H\hat Q^H}_{A^H} \underbrace{\hat Q\hat R}A x=\underbrace{\hat R^H\hat Q^H}{A^H}b\implies \hat Rx=\hat Q^Hb$$
     - Reduced SVD
-        - $$A=\hat U\hat \Sigma V^H,Ax=b\implies \underbrace{V\hat \Sigma\hat U^H}_{A^H} \underbrace{\hat U\hat \Sigma V^H}A x=\underbrace{V\hat \Sigma\hat U^H}{A^H}b\implies x=V\hat\Sigma^{-1}\hat U^Hb$
+        - $$A=\hat U\hat \Sigma V^H,Ax=b\implies \underbrace{V\hat \Sigma\hat U^H}_{A^H} \underbrace{\hat U\hat \Sigma V^H}A x=\underbrace{V\hat \Sigma\hat U^H}{A^H}b\implies x=V\hat\Sigma^{-1}\hat U^Hb$$
