@@ -4,7 +4,7 @@
         MathJax.Hub.Config({
             tex2jax: {
             skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
             displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
             }
         });
@@ -33,14 +33,14 @@
 
 ### Null Space
 
-- $null(A)=\{x|Ax=0\}$
+- $$null(A)=\{x|Ax=0\}$$
 
 ## Vector Space
 
 ### Vector Space
 
-- A **vector space** ***V = {a collection of vectors $$\vec{v}$$}*** satisfies
-    - All $$\vec{v},\vec{w}\in V$ can be added and multiplied by $a\in \mathbb{R}$$:
+- A **vector space** ***V = {a collection of vectors $$\vec{v}$$ }*** satisfies
+    - All $$\vec{v},\vec{w}\in V$$ can be added and multiplied by $$a\in \mathbb{R}$$:
         - $$\vec{v}+\vec{w}\in V, \qquad a\cdot \vec{v} \in V$$
     - The operations `+` and `.` must satisfy the following axioms
         
@@ -50,9 +50,9 @@
         - $$\mathbb{R}^n$$ is a vector space.
         - Polynomials is a vector space.
 - **Subspace**
-    - A subspace is a nonempty subset $S\subseteq V$  of a vector space ***V*** over field ***F*** that satisfies the conditions
-        - $\alpha \vec{v}\in S,\forall \vec{v}\in S,\forall \alpha\in \mathbb{F}$
-        - $\vec{v}+\vec{u}\in S, \forall \vec{v},\vec{u}\in S$
+    - A subspace is a nonempty subset $$S\subseteq V$$  of a vector space ***V*** over field ***F*** that satisfies the conditions
+        - $$\alpha \vec{v}\in S,\forall \vec{v}\in S,\forall \alpha\in \mathbb{F}$$
+        - $$\vec{v}+\vec{u}\in S, \forall \vec{v},\vec{u}\in S$$
     - In other words S is closed scalar multiplication and under addition.
 
 ### Span
@@ -63,13 +63,13 @@
 </aside>
 
 - $$\vec{v}$$ is called a **linear combination** of $$\vec{v_1},\dots,\vec{v_n}$$ if $$\vec{v}=a_1\vec{v_1}+\dots+a_n\vec{v_n}$$
-- For a set of vectors $S=\{\vec{v_i}:i\in I\}$, all its **linear combinations** define
+- For a set of vectors $$S=\{\vec{v_i}:i\in I\}$$, all its **linear combinations** define
 
-$$$$
+$$
 span(S)=\{\sum_ia_i\vec{v_i}:\vec{v_i}\in S \text{ and }a_i\in \mathbb{R}\}
-$$$$
+$$
 
-- The set $\vec{v_1},\dots,\vec{v_n}\subseteq V$ is called a **spinning se**t if $$span(\vec{v_1},\dots,\vec{v_n})=V$$. (i.e. every vector in ***V*** can be written as a linear combination of  $$\vec{v_1},\dots,\vec{v_n}$$)
+- The set $$\vec{v_1},\dots,\vec{v_n}\subseteq V$$ is called a **spinning se**t if $$span(\vec{v_1},\dots,\vec{v_n})=V$$. (i.e. every vector in ***V*** can be written as a linear combination of  $$\vec{v_1},\dots,\vec{v_n}$$)
 
 ### Linear Independence
 
@@ -84,9 +84,9 @@ $$$$
 - Basis are a central concept in linear algebra
     - For a given vector space V there are usually an infinite number of bases to choose from
     - For many problems, the key solution step is transforming into the right basis
-- Given a basis $$\{\vec{v_1},\dots,\vec{v_n}\}$$ for ***V***, there is a unique way to write any $\tilde{\vec{v}}\in V$ as: $$\tilde{\vec{v}}=\alpha_1\vec{v_1}+\alpha_2\vec{v_2}+\dots+\alpha_n\vec{v_n}$$
+- Given a basis $$\{\vec{v_1},\dots,\vec{v_n}\}$$ for ***V***, there is a unique way to write any $$\tilde{\vec{v}}\in V$$ as: $$\tilde{\vec{v}}=\alpha_1\vec{v_1}+\alpha_2\vec{v_2}+\dots+\alpha_n\vec{v_n}$$
 
-![Untitled](math/LinearAlg1.png)
+![Untitled](/assets/images/math/LinearAlg1.png)
 
 ### Dimension
 
@@ -103,7 +103,7 @@ $$\begin{bmatrix}a&b\\c&c\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=x\begin{b
 
 ### Linear Transformation
 
-- Given two vector spaces $V, V’$, **Linear transformation** is a mapping/function $L:V\to V’$ such that
+- Given two vector spaces $$V, V’$$, **Linear transformation** is a mapping/function $$L:V\to V’$$ such that
     
     $$
     L(\alpha \vec{v}+\beta \vec{u})=\alpha L(\vec{v})+\beta L(\vec{u})\quad \forall \vec{v},\vec{u} \in V
@@ -118,7 +118,7 @@ $$\begin{bmatrix}a&b\\c&c\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=x\begin{b
 
 ### Representation of Linear Transformation
 
-- All linear maps $L: \mathbb{R}^n\to \mathbb{R}^m$ can be expressed as $$L(\vec{v})=A\vec{v}$$
+- All linear maps $$L: \mathbb{R}^n\to \mathbb{R}^m$$ can be expressed as $$L(\vec{v})=A\vec{v}$$
 - Evaluating the coordinates of $$L(\vec{v})$$ in basis ***C*** for an arbitrary $$\vec{v}$$
 
 $$
@@ -149,13 +149,13 @@ $$
 - $$\vec{a}=A\vec{b}$$
     - Assume $$\hat{e_1},\dots,\hat{e_n}$$ is the basis of vector space of $$\vec{b}$$, then each column of ***A*** is where the transformed vectors of $$\hat{e_1},\dots,\hat{e_n}$$ landed in the vector space of $$\vec{a}$$ (i.e. forming a basis)
     
-    ![Untitled](math/LinearAlg2.png)
+    ![Untitled](/assets/images/math/LinearAlg2.png)
     
     - Example
         
-        ![Untitled](math/LinearAlg3.png)
+        ![Untitled](/assets/images/math/LinearAlg3.png)
         
-        ![Untitled](math/LinearAlg4.png)
+        ![Untitled](/assets/images/math/LinearAlg4.png)
         
 
 # Matrix
@@ -164,12 +164,12 @@ $$
 
 ### Matrix Multiplication
 
-- Let $$A\in\mathbb{R}^{p\times m}$ and $B\in\mathbb{R}^{m\times n}$$.
+- Let $$A\in\mathbb{R}^{p\times m}$$ and $$B\in\mathbb{R}^{m\times n}$$.
 - The matrix dimension should match!
-- The matrix multiplication operation $$C=AB$$ is defined as: $c_{ij}=\sum_{k=1}^m a_{ik}b_{kj}$
+- The matrix multiplication operation $$C=AB$$ is defined as: $$c_{ij}=\sum_{k=1}^m a_{ik}b_{kj}$
     - Each column of C is a linear combination of the columns of A
         
-        ![Untitled](math/LinearAlg5.png)
+        ![Untitled](/assets/images/math/LinearAlg5.png)
         
     - Each row of *C* is a linear combination of the rows of *B*
         
@@ -178,7 +178,7 @@ $$
 - Properties
     - Associative: $$A(BC)=(AB)C$$
     - Distributive: $$A(B+C)=AB+AC$$
-    - Not commutative: $AB\neq BA$
+    - Not commutative: $$AB\neq BA$
 - Interpretation: $$\vec{u}=AB\vec{v}=C\vec{v}$$ ($$C=AB$$), matrix multiplication is the composition of linear transformation
     - The effect of first applying linear transformation ***A***, then applying linear transformation ***B***
     - Overall it is the same as applying the linear transformation ***C***.
@@ -193,15 +193,15 @@ $$
 
 ### Inverse
 
-- A square matrix ***X*** is an **inverse** of $A\in\mathbb{R}^{m\times m}$ if and only if ***AX=I*** and ***XA=I***.
+- A square matrix ***X*** is an **inverse** of $$A\in\mathbb{R}^{m\times m}$$ if and only if ***AX=I*** and ***XA=I***.
     - We write $$X=A^{-1}$$, ***A*** is said to be **invertible** or **nonsingular** when it has an inverse.
-- Theorem: the following conditions for square matrix $A\in\mathbb{F}^{m\times m}$ are equivalent
+- Theorem: the following conditions for square matrix $$A\in\mathbb{F}^{m\times m}$$ are equivalent
     - A has an inverse
     - A is a nonsingular matrix
     - det(A)≠0 (if det(A)=0, then the transformation squishes into lower dimension)
     - A is of full rank m
-    - $$range(A)=\mathbb{F}^{m}$$
-    - $$\mathbb{N}(A)=\{\bold{0}\}$$
+    - $$range(A)=\mathbb{F}^{m}$$ 
+    - $$\mathbb{N}(A)=\{\vec{0}\}$$ 
     - 0 is not an eigenvalue of A
     - 0 is not a singular value of A
 
@@ -209,8 +209,8 @@ $$
 
 ### Range / Column Space
 
-- The **range / column space** of $A\in\mathbb{R}^{m\times n}$ is the image of $$\mathbb{R}^n$$ under ***A***
-    - $$\text{range(A)}:=\lbrace{A\bold{x}|\bold{x}\in}\mathbb{R}^{n}\rbrace$$, i.e. the set of all possible outputs of ***Ax***
+- The **range / column space** of $$A\in\mathbb{R}^{m\times n}$$ is the image of $$\mathbb{R}^n$$ under ***A***
+    - $$\text{range(A)}:=\lbrace{A\bold{x}|\bold{x}\in}\mathbb{R}^{n}\rbrace$$ , i.e. the set of all possible outputs of ***Ax***
 
 ### Matrix Rank
 
@@ -224,10 +224,10 @@ $$
     - Column and row ranks always equal, so we can simply refer to the **rank** of a matrix
 - **Full rank**: Matrix ***A*** is **full rank** if it has the greatest possible rank, *min(m, n)*
     - A full-rank matrix A with m≥n must have n linearly independent columns
-    - Theorem: a matrix A with m≥n has full rank n iff $Ax\neq Ay ,\;\forall x\neq y\in \mathbb{R}^n$ (no distinct vectors get mapped to the same vector)
+    - Theorem: a matrix A with m≥n has full rank n iff $$Ax\neq Ay ,\;\forall x\neq y\in \mathbb{R}^n$$ (no distinct vectors get mapped to the same vector)
 - Rank-One
     - The transformation becomes a line
-    - The rank of a matrix $A\in\mathbb{R}^{m\times n}$ equals 1 if and only if it can be written in the form $$xy^T$$
+    - The rank of a matrix $$A\in\mathbb{R}^{m\times n}$$ equals 1 if and only if it can be written in the form $$xy^T$$
 - Rank-Two: the transformation becomes a plane
 - rank(AB) ≤ min(rank(A), rank(B))
 
@@ -241,15 +241,15 @@ $$
 - The determinant of a square matrix, , measuring the “volume change” produced by the corresponding linear map.
 - $$det(A)=0$$ if A’s columns are linearly dependent
 - $$det(I)=1$$
-- $det(\text{triangular matrix})=\prod_{i=1}^m a_{ii}$
-- $det(\alpha A)=\alpha^m det(A)$
+- $$det(\text{triangular matrix})=\prod_{i=1}^m a_{ii}$
+- $$det(\alpha A)=\alpha^m det(A)$
 - $$det(A^T)=det(A)$$
 - $$det(AB)=det(A)det(B)$$
 - $$det(A^{-1})=\frac{1}{det(A)}$$
 
 ### Eigenvalue and Eigenvector
 
-- Given a square matrix $A\in \mathbb{C}^{m\times m}$, a nonzero vector $\bold{x}\in \mathbb{C}^m$ is an **eigenvector**, and $\lambda\in \mathbb{C}$ is its corresponding **eigenvalue**, if: $$A\bold{x}=\lambda\bold{x}$$
+- Given a square matrix $$A\in \mathbb{C}^{m\times m}$$, a nonzero vector $$\vec{x}\in \mathbb{C}^m$$ is an **eigenvector**, and $$\lambda\in \mathbb{C}$$ is its corresponding **eigenvalue**, if: $$A\vec{x}=\lambda\vec{x}$$
 - The set of all eigenvalues of A is called the matrix **spectrum** $$\Lambda(A)$$
 - More refer to [eigenvalue decomposition](https://www.notion.so/Linear-Algebra-99a9a4dacf4f4d85ad519ee30b5ceb76)
 
@@ -280,7 +280,7 @@ $$$$
 
 ### Positive Definite Matrix
 
-- A is positive definite if  $A^T=A\text{ and }x^TAx>0,\forall x\neq 0$
+- A is positive definite if  $$A^T=A\text{ and }x^TAx>0,\forall x\neq 0$
 
 ### Symmetric Matrix
 
@@ -290,21 +290,21 @@ $$$$
 
 - $$A^H=(\bar{A})^T$$
 - Compare to Symmetric
-    - Symmetric for matrices $\in\mathbb{R}^{m\times n}$
-    - Hermitian for matrices $\in\mathbb{C}^{m\times n}$
+    - Symmetric for matrices $$\in\mathbb{R}^{m\times n}$
+    - Hermitian for matrices $$\in\mathbb{C}^{m\times n}$
 
 ### Orthogonal Matrix
 
-- Vectors $\vec{a}, \vec{b}$ are orthogonal if $$\vec{a}\cdot\vec{b}=0=\cos90\degree$$
-- A Square Matrix $A\in\mathbb{R}^{n\times n}$ is orthogonal if $$A^TA=AA^T=I$$
+- Vectors $$\vec{a}, \vec{b}$$ are orthogonal if $$\vec{a}\cdot\vec{b}=0=\cos90$$
+- A Square Matrix $$A\in\mathbb{R}^{n\times n}$$ is orthogonal if $$A^TA=AA^T=I$$
 - $$det(A)=\pm1$$ (Proof: $$det(I)=det(A^TA)=det(A^T)det(A)=1$$)
 
 ### Unitary Matrix
 
-- Matrix $A\in\mathbb{C}^{n\times n}$ is unitary if $$A^HA=AA^H=I$$
+- Matrix $$A\in\mathbb{C}^{n\times n}$$ is unitary if $$A^HA=AA^H=I$$
 - Compare to Orthogonal
-    - Orthogonal matrices $\in\mathbb{R}^{m\times n}$
-    - Unitary matrices $\in\mathbb{C}^{m\times n}$
+    - Orthogonal matrices $$\in\mathbb{R}^{m\times n}$
+    - Unitary matrices $$\in\mathbb{C}^{m\times n}$
 
 # Norm
 
@@ -315,22 +315,22 @@ $$$$
 ### Definition
 
 - A **vector** **norm** on $$\mathbb{C}^n$$ is a mapping that maps each $$\vec{x}\in\mathbb{C}^n$$ to a real number $$\|\vec{x}\|\in\mathbb{R}$$satisfying the following properties:
-    - Positive Definite Property: $\|\vec{x}\|>0\text{ for } \vec{x}\neq\vec{0} \text{ and } \|\vec{0}\|=0$
-    - Absolute Homogeneity: $\|\alpha \vec{x}\|=|\alpha|\|\vec{x}\|$ for $$\alpha\in\mathbb{C}$$
+    - Positive Definite Property: $$\|\vec{x}\|>0\text{ for } \vec{x}\neq\vec{0} \text{ and } \|\vec{0}\|=0$$
+    - Absolute Homogeneity: $$\|\alpha \vec{x}\|=|\alpha|\|\vec{x}\|$$ for $$\alpha\in\mathbb{C}$$$
     - Triangle inequality: $$\|\vec{x}+\vec{y}\|\leq\|\vec{x}\|+\|\vec{y}\|$$
 
 ### p-norm
 
 - **Vector p-norm**
-    - Let $$p\in\mathbb{R}$$ and $1\leq p \leq \infty$, define $$\|\vec{x}\|_p=(\sum_{i=1}^m|x_i|^p)^{\frac{1}{p}}$$
+    - Let $$p\in\mathbb{R}$$ and $$1\leq p \leq \infty$$, define $$\|\vec{x}\|_p=(\sum_{i=1}^m|x_i|^p)^{\frac{1}{p}}$$
     - Then $$\|\vec{x}\|_p$$ is a norm and is called the vector p-norm.
 - Frequently used norms
-    - “Taxicab” or “Manhattan distance”: $p=1\implies \|\vec{x}\|_1=\sum_{i=1}^m|x_i|$
-    - “Euclidean length”: $p=2\implies \|\vec{x}\|_2=\sqrt{\sum_{i=1}^m|x_i|^2}=\sqrt{\vec{x}^H\vec{x}}$
-    - $p=\infty\implies \|x\|_\infty=\max_{1\leq i\leq m}|x_i|$
+    - “Taxicab” or “Manhattan distance”: $$p=1\implies \|\vec{x}\|_1=\sum_{i=1}^m|x_i|$$
+    - “Euclidean length”: $$p=2\implies \|\vec{x}\|_2=\sqrt{\sum_{i=1}^m|x_i|^2}=\sqrt{\vec{x}^H\vec{x}}$$
+    - $$p=\infty\implies \|x\|_\infty=\max_{1\leq i\leq m}|x_i|$$
     - The geometry of vector norms
         
-        ![Untitled](math/LinearAlg7.png)
+        ![Geometry](/assets/images/math/LinearAlg7.png)
         
 - Nice Property of 2-norm
     - invariance under unitary transformation: $$\|Qx\|_2=\|x\|_2$$ if $$Q^HQ=I$$
@@ -338,9 +338,9 @@ $$$$
 - Norm Equivalence
     - Let $$\|\cdot\|_p,\|\cdot\|_q$$ be any two vector norms, then there are constants $$c_1,c_2>0$$ such that
     
-    $$$$
+    $$
     c_1\|\cdot\|_p\leq \|\cdot\|_q\leq c_2\|\cdot\|_p
-    $$$$
+    $$
     
     - By the norm equivalence, the convergence (error, distance) in one norm implies convergence (error, distance) in any other norm.
 
@@ -348,47 +348,47 @@ $$$$
 
 ### Definition
 
-- A matrix **norm** on $\mathbb{C}^{m\times n}$ is a mapping that maps each $A\in\mathbb{C}^{m\times n}$ to a real number $$\|A\|\in\mathbb{R}$$satisfying the following properties:
-    - Positive Definite Property: $\|A\|>0\text{ for } A\neq\vec{0} \text{ and } \|{0}\|=0$
-    - Absolute Homogeneity: $\|\alpha A\|=|\alpha|\|A\|$ for $$\alpha\in\mathbb{C}$$
+- A matrix **norm** on $$\mathbb{C}^{m\times n}$$ is a mapping that maps each $$A\in\mathbb{C}^{m\times n}$$ to a real number $$\|A\|\in\mathbb{R}$$satisfying the following properties:
+    - Positive Definite Property: $$\|A\|>0\text{ for } A\neq\vec{0} \text{ and } \|{0}\|=0$$
+    - Absolute Homogeneity: $$\|\alpha A\|=|\alpha|\|A\|$$ for $$\alpha\in\mathbb{C}$$
     - Triangle inequality: $$\|A+B\|\leq\|A\|+\|B\|$$
-    - *Consistency: $\|AB\|\leq \|A\|\|B\|$
+    - *Consistency: $$\|AB\|\leq \|A\|\|B\|$$
 
 ### Induced Norms
 
 **Induced Matrix Norm**: A vector norm $$\|\cdot\|$$ induces a matrix norm, denoted by
 
-$$$$
+$$
 \|A\|_{(m,n)}:=\max_{\substack{\bold x\in \mathbb{C}^n\\\bold x\neq \bold 0}}\frac{\|A\bold x\|_{(m)}}{\|\bold x\|_{(n)}}=\max_{\substack{\bold x\in \mathbb{C}^n\\\|\bold x\|_{(n)}=1}} \|A\bold x\|_{(m)}
-$$$$
+$$
 
-- Property: $\|Ax\|\leq \|A\|\|x\|$. Therefore, $$\|A\|$$ is the maximal factor by which ***A*** can “stretch” a vector.
+- Property: $$\|Ax\|\leq \|A\|\|x\|$$. Therefore, $$\|A\|$$ is the maximal factor by which ***A*** can “stretch” a vector.
 
 ### Frequently Used Matrix Norms
 
 - **Frobenius norm** $$\|A\|_F$$ of A is defined as
 
-$$$$
+$$
 \|A\|_F=(\sum_{i=1}^m\sum_{j=1}^n|a_{ij}|^2)^{\frac{1}{2}}=\sqrt{tr(A^HA)}\quad \text{where } A=(a_{ij})\in\mathbb{C}^{m\times n}
-$$$$
+$$
 
 - **Matrix p-norms**
-    - $\|A\|_1=\max_{\vec{x}\neq 0}\frac{\|A\vec x\|_1}{\|\vec x\|_1}=\max_{1\leq j\leq n}\{\sum_{i=1}^m|a_{ij}|\}$ = max absolute column sum
-    - $\|A\|_2=\max_{\vec{x}\neq 0}\frac{\|A\vec x\|_2}{\|\vec x\|_2}=\sqrt{\text{the largest eigenvalue of }A^HA}$ = the largest singular value of A
-    - $\|A\|_\infty=\max_{\vec{x}\neq 0}\frac{\|A\vec x\|_\infty}{\|\vec x\|_\infty}=\max_{1\leq i\leq m}\{\sum_{j=1}^n|a_{ij}|\}$ = max absolute row sum
+    - $$\|A\|_1=\max_{\vec{x}\neq 0}\frac{\|A\vec x\|_1}{\|\vec x\|_1}=\max_{1\leq j\leq n}\{\sum_{i=1}^m|a_{ij}|\}$$ = max absolute column sum
+    - $$\|A\|_2=\max_{\vec{x}\neq 0}\frac{\|A\vec x\|_2}{\|\vec x\|_2}=\sqrt{\text{the largest eigenvalue of }A^HA}$$ = the largest singular value of A
+    - $$\|A\|_\infty=\max_{\vec{x}\neq 0}\frac{\|A\vec x\|_\infty}{\|\vec x\|_\infty}=\max_{1\leq i\leq m}\{\sum_{j=1}^n|a_{ij}|\}$$ = max absolute row sum
 
 ### Properties
 
-- $\|\cdot\|_2, \|\cdot\|_F$ are **unitarily invariant**:
+- $$\|\cdot\|_2, \|\cdot\|_F$$ are **unitarily invariant**:
     - $$\|UAV\|_2=\|A\|_2,\quad\|UAV\|_F=\|A\|_F$$ for all unitary matrices ***U*** and ***V***.
 - Norm Inequalities
-    - $\|A\|_2^2\leq \|A\|_1\|A\|_\infty$
+    - $$\|A\|_2^2\leq \|A\|_1\|A\|_\infty$$
 - Norm Equivalence
     - Let $$\|\cdot\|_p,\|\cdot\|_q$$ be any two matrix norms, then there are constants $$c_1,c_2>0$$ such that
 
-$$$$
+$$
 c_1\|\cdot\|_p\leq \|\cdot\|_q\leq c_2\|\cdot\|_p
-$$$$
+$$
 
 # Matrix Decomposition
 
@@ -396,14 +396,14 @@ $$$$
 
 ### Definition
 
-- Factor a matrix $A\in \mathbb{C}^{m\times m}$ into the form: *A=LU*, where *L* is lower triangular and *U* is upper triangular.
+- Factor a matrix $$A\in \mathbb{C}^{m\times m}$$ into the form: *A=LU*, where *L* is lower triangular and *U* is upper triangular.
     - The algorithm is Gaussian elimination in matrix form
     
-    ![Untitled](math/LinearAlg8.png)
+    ![Untitled](/assets/images/math/LinearAlg8.png)
     
 - Gaussian Elimination
     
-    ![Untitled](math/LinearAlg9.png)
+    ![Untitled](/assets/images/math/LinearAlg9.png)
     
 
 ### Pivoting
@@ -413,11 +413,11 @@ $$$$
     - Solution: swap the rows/columns (**pivoting**)
     - Pivoting brings backward stability
 - Complete Pivoting: $$PAQ=LU$$ (P, Q are permutation matrices)
-    - At step k, we ideally pick the largest $$x_{ij}$$ in submatrix $i,j\ge k$ as the pivot, reordering rows and columns
+    - At step k, we ideally pick the largest $$x_{ij}$$ in submatrix $$i,j\ge k$$ as the pivot, reordering rows and columns
     - Backward Stable
     - Computation complexity: $$O(m^3)$$
 - Partial Pivoting: $$PA=LU$$(P is a permutation matrix)
-    - Only reorder the **rows**. Choose the largest $x_{ik}\;\text{ in column k} (i\ge k)$ as the pivot
+    - Only reorder the **rows**. Choose the largest $$x_{ik}\;\text{ in column k} (i\ge k)$$ as the pivot
     - Technically backward stable, though theoretically with backward error growing exponentially as we enlarge the matrix $$\rho=2^{m-1}$$
     - Computation complexity: $$O(m^2)$$
 - Partial Pivoting is truly helpful and appears to be sufficient for acceptable (non-exponential) growth factors except in vanishingly rare pathological cases.
@@ -440,10 +440,10 @@ $$$$
 
 ### Definition
 
-- Let $A\in \mathbb{R}^{m\times n}$ with m ≥ n and rank(A) = n. Then there exists an orthogonal matrix $Q\in \mathbb{R}^{m\times n} (Q^TQ=I)$, and an upper triangular matrix $R\in \mathbb{R}^{n\times n}$ such that $$A=QR$$
+- Let $$A\in \mathbb{R}^{m\times n}$$ with m ≥ n and rank(A) = n. Then there exists an orthogonal matrix $$Q\in \mathbb{R}^{m\times n} (Q^TQ=I)$$, and an upper triangular matrix $$R\in \mathbb{R}^{n\times n}$$ such that $$A=QR$$
 - QR decomposition is Gram-Schmidt orthogonalization process in matrix form
 
-![Untitled](math/LinearAlg10.png)
+![Untitled](/assets/images/math/LinearAlg10.png)
 
 ### Application
 
@@ -454,18 +454,18 @@ $$$$
 
 ### Schur decomposition
 
-- For a square matrix $A\in \mathbb{R}^{n\times n}$, there is an n x n unitary matrix U ($$U^HU=I$$) such that $$A=UTU^H$$ where T is upper triangular
+- For a square matrix $$A\in \mathbb{R}^{n\times n}$$, there is an n x n unitary matrix U ($$U^HU=I$$) such that $$A=UTU^H$$ where T is upper triangular
 - Always exists
 
 ### Spectral decomposition
 
-- For a Hermitian matrix $A\in \mathbb{R}^{n\times n}(A^H=A)$, we have $A=U\Lambda U^H$ where $$\Lambda$$ is real and diagonal, and U is unitary($$U^HU=I$$).
+- For a Hermitian matrix $$A\in \mathbb{R}^{n\times n}(A^H=A)$$, we have $$A=U\Lambda U^H$$ where $$\Lambda$$ is real and diagonal, and U is unitary($$U^HU=I$$).
 
 ### Eigenvalue decomposition
 
-- A square matrix $A\in \mathbb{C}^{n\times n}$ is **diagonalizable** if and only if $A=X\Lambda X^{-1}$, where $$\Lambda$$ is a diagonal matrix and X is nonsingular.
+- A square matrix $$A\in \mathbb{C}^{n\times n}$$ is **diagonalizable** if and only if $$A=X\Lambda X^{-1}$$, where $$\Lambda$$ is a diagonal matrix and X is nonsingular.
 
-![Untitled](math/LinearAlg11.png)
+![Untitled](/assets/images/math/LinearAlg11.png)
 
 - Not always exists
 
@@ -480,29 +480,29 @@ $$$$
 
 ### Definition
 
-The (full) **singular value decomposition** (SVD) of $A\in \mathbb{R}^{m\times n}$
+The (full) **singular value decomposition** (SVD) of $$A\in \mathbb{R}^{m\times n}$$
 
-$A=U\Sigma V^T$
+$$A=U\Sigma V^T$$
 
 where
 
-- $$U$$ is an $m\times m$ orthogonal matrix $$U^TU=I$$
-- $$V$$ is an $n\times n$ orthogonal matrix $$V^TV=I$$
-- $$\Sigma$$ is an $m\times n$ diagonal matrix with the ordered nonnegative diagonal elements $\sigma_1\ge \sigma_2\dots \sigma_r>\sigma_{r+1}=\dots=\sigma_n=0$
+- $$U$$ is an $$m\times m$$ orthogonal matrix $$U^TU=I$$
+- $$V$$ is an $$n\times n$$ orthogonal matrix $$V^TV=I$$
+- $$\Sigma$$ is an $$m\times n$$ diagonal matrix with the ordered nonnegative diagonal elements $$\sigma_1\ge \sigma_2\dots \sigma_r>\sigma_{r+1}=\dots=\sigma_n=0$
 
 Furthermore,
 
-- $\sigma_1, \sigma_2,\dots,\sigma_n$ are called **singular values**
-- The columns $u_1, u_2,\dots,u_m$ of $$U$$ are called **left singular vectors**
-- The columns $v_1, v_2,\dots,v_m$ of $$V$$ are called **right singular vectors**
+- $$\sigma_1, \sigma_2,\dots,\sigma_n$$ are called **singular values**
+- The columns $$u_1, u_2,\dots,u_m$$ of $$U$$ are called **left singular vectors**
+- The columns $$v_1, v_2,\dots,v_m$$ of $$V$$ are called **right singular vectors**
 - Always exists
 
 ### Compact/Thin/Reduced SVD
 
-Let *r=rank(A)*, then $A=U_r\Sigma_r V_r^T$, where
+Let *r=rank(A)*, then $$A=U_r\Sigma_r V_r^T$$, where
 
-- $$U_r$$ is an $m\times r$ orthogonal matrix $$U_r^TU_r=I$$
-- $$V_r$$ is an $n\times r$ orthogonal matrix $$V_r^TV_r=I$$
+- $$U_r$$ is an $$m\times r$$ orthogonal matrix $$U_r^TU_r=I$$
+- $$V_r$$ is an $$n\times r$$ orthogonal matrix $$V_r^TV_r=I$$
 - $$\Sigma_r=Diag(\sigma_1,\dots,\sigma_r)$$
 
 ### Application
@@ -515,21 +515,21 @@ Let *r=rank(A)*, then $A=U_r\Sigma_r V_r^T$, where
     - where $$E_k$$ for $$k=1,2,\dots,r$$ is a rank-one matrix of the form $$E_k=\sigma_ku_kv_k^T$$
     - $$E_k$$ is referred to as the k-th **component** of A
 - Echkart-Young Theorem (optimal low-rank approximation)
-    - Let $A=U\Sigma V^T$ be the SVD of A. Then the matrix  $$A_k=E_1+E_2+\dots+E_k$$ is the **best** rank-k approximatin of A. That is,
+    - Let $$A=U\Sigma V^T$$ be the SVD of A. Then the matrix  $$A_k=E_1+E_2+\dots+E_k$$ is the **best** rank-k approximatin of A. That is,
     
     $$$$
     \min_{rank(B)=k}\|A-B\|=\|A-A_k\|
     $$$$
     
-    - where $k≤ r = rank(A)$
+    - where $$k≤ r = rank(A)$
 
 ## Solving Least Squares
 
-- Problem: $$\min_x\|Ax-b\|_2$$ for $A\in\mathbb{C}^{m\times n},\;m\geq n$
+- Problem: $$\min_x\|Ax-b\|_2$$ for $$A\in\mathbb{C}^{m\times n},\;m\geq n$
 - Solution
     - Cholesky (normal equations)
-        - $A^HAx=A^Hb,\quad A^HA=LL^H$
+        - $$A^HAx=A^Hb,\quad A^HA=LL^H$
     - Reduced QR
-        - $A=\hat Q\hat R,Ax=b\implies \underbrace{\hat R^H\hat Q^H}_{A^H} \underbrace{\hat Q\hat R}A x=\underbrace{\hat R^H\hat Q^H}{A^H}b\implies \hat Rx=\hat Q^Hb$
+        - $$A=\hat Q\hat R,Ax=b\implies \underbrace{\hat R^H\hat Q^H}_{A^H} \underbrace{\hat Q\hat R}A x=\underbrace{\hat R^H\hat Q^H}{A^H}b\implies \hat Rx=\hat Q^Hb$
     - Reduced SVD
-        - $A=\hat U\hat \Sigma V^H,Ax=b\implies \underbrace{V\hat \Sigma\hat U^H}_{A^H} \underbrace{\hat U\hat \Sigma V^H}A x=\underbrace{V\hat \Sigma\hat U^H}{A^H}b\implies x=V\hat\Sigma^{-1}\hat U^Hb$
+        - $$A=\hat U\hat \Sigma V^H,Ax=b\implies \underbrace{V\hat \Sigma\hat U^H}_{A^H} \underbrace{\hat U\hat \Sigma V^H}A x=\underbrace{V\hat \Sigma\hat U^H}{A^H}b\implies x=V\hat\Sigma^{-1}\hat U^Hb$
