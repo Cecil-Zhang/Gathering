@@ -1,5 +1,9 @@
 ---
-base_url: /Gathering
+layout: single
+title:  "Linear Algebra Essence"
+date:   2022-04-22 12:00:04 -0700
+categories: Math
+toc: true
 ---
 <head>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>

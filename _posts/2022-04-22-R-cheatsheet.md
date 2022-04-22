@@ -1,4 +1,10 @@
-# R Cheatsheet
+---
+title:  "R cheatsheet"
+date:   2022-04-22 12:00:04 -0700
+categories: 
+ - Programming Language
+toc: true
+---
 
 ## Data Types
 ### Basic Data Types
