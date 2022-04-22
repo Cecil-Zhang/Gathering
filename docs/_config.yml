@@ -1,5 +1,4 @@
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-github: [metadata]
 defaults:
   # _posts
   - scope:
@@ -19,3 +18,4 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+github: [metadata]

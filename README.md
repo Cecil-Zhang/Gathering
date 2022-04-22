@@ -1,2 +1,2 @@
-# Gathering
-Gathering from all around
+### Run locally
+`bundle exec jekyll serve`
