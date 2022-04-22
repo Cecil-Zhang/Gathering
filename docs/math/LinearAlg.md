@@ -1,3 +1,6 @@
+---
+base_url: /Gathering
+---
 <head>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
     <script type="text/x-mathjax-config">
@@ -149,7 +152,7 @@ $$
 - $$\vec{a}=A\vec{b}$$
     - Assume $$\hat{e_1},\dots,\hat{e_n}$$ is the basis of vector space of $$\vec{b}$$, then each column of ***A*** is where the transformed vectors of $$\hat{e_1},\dots,\hat{e_n}$$ landed in the vector space of $$\vec{a}$$ (i.e. forming a basis)
     
-    ![Untitled](/assets/images/math/LinearAlg2.png)
+    ![Untitled]({{ base_url }}/assets/images/math/LinearAlg2.png)
     
     - Example
         
