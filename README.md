@@ -1,4 +1,4 @@
 ### Update Gem
 `bundle`
 ### Run locally
-`bundle exec jekyll serve`
+`bundle exec jekyll serve --baseurl ''`
