@@ -94,7 +94,7 @@ $$
     - For many problems, the key solution step is transforming into the right basis
 - Given a basis $$\{\vec{v_1},\dots,\vec{v_n}\}$$ for ***V***, there is a unique way to write any $$\tilde{\vec{v}}\in V$$ as: $$\tilde{\vec{v}}=\alpha_1\vec{v_1}+\alpha_2\vec{v_2}+\dots+\alpha_n\vec{v_n}$$
 
-![Implicit Assumption]({{ site.base_url }}/assets/images/math/LinearAlg1.png)
+![Implicit Assumption]({{ site.baseurl }}/assets/images/math/LinearAlg1.png)
 
 ### Dimension
 
@@ -160,13 +160,13 @@ $$
 - $$\vec{a}=A\vec{b}$$
     - Assume $$\hat{e_1},\dots,\hat{e_n}$$ is the basis of vector space of $$\vec{b}$$, then each column of ***A*** is where the transformed vectors of $$\hat{e_1},\dots,\hat{e_n}$$ landed in the vector space of $$\vec{a}$$ (i.e. forming a basis)
     
-    ![Interpretation]({{ site.base_url }}/assets/images/math/LinearAlg2.png)
+    ![Interpretation]({{ site.baseurl }}/assets/images/math/LinearAlg2.png)
     
     - Example
         
-        ![linear combination]({{ site.base_url }}/assets/images/math/LinearAlg3.png)
+        ![linear combination]({{ site.baseurl }}/assets/images/math/LinearAlg3.png)
         
-        ![illustration]({{ site.base_url }}/assets/images/math/LinearAlg4.png)
+        ![illustration]({{ site.baseurl }}/assets/images/math/LinearAlg4.png)
         
 
 # Matrix
@@ -180,11 +180,11 @@ $$
 - The matrix multiplication operation $$C=AB$$ is defined as: $$c_{ij}=\sum_{k=1}^m a_{ik}b_{kj}$$
     - Each column of C is a linear combination of the columns of A
         
-        ![column]({{ site.base_url }}/assets/images/math/LinearAlg5.png)
+        ![column]({{ site.baseurl }}/assets/images/math/LinearAlg5.png)
         
     - Each row of *C* is a linear combination of the rows of *B*
         
-        ![row]({{ site.base_url }}/assets/images/math/LinearAlg6.png)
+        ![row]({{ site.baseurl }}/assets/images/math/LinearAlg6.png)
         
 - Properties
     - Associative: $$A(BC)=(AB)C$$
@@ -342,7 +342,7 @@ $$
     - $$p=\infty\implies \|x\|_\infty=\max_{1\leq i\leq m}\vert x_i\vert$$
     - The geometry of vector norms
         
-        ![Geometry]({{ site.base_url }}/assets/images/math/LinearAlg7.png)
+        ![Geometry]({{ site.baseurl }}/assets/images/math/LinearAlg7.png)
         
 - Nice Property of 2-norm
     - invariance under unitary transformation: $$\|Qx\|_2=\|x\|_2$$ if $$Q^HQ=I$$
@@ -411,11 +411,11 @@ $$
 - Factor a matrix $$A\in \mathbb{C}^{m\times m}$$ into the form: *A=LU*, where *L* is lower triangular and *U* is upper triangular.
     - The algorithm is Gaussian elimination in matrix form
     
-    ![LU]({{ site.base_url }}/assets/images/math/LinearAlg8.png)
+    ![LU]({{ site.baseurl }}/assets/images/math/LinearAlg8.png)
     
 - Gaussian Elimination
     
-    ![Gaussian elimination]({{ site.base_url }}/assets/images/math/LinearAlg9.png)
+    ![Gaussian elimination]({{ site.baseurl }}/assets/images/math/LinearAlg9.png)
     
 
 ### Pivoting
@@ -477,7 +477,7 @@ $$
 
 - A square matrix $$A\in \mathbb{C}^{n\times n}$$ is **diagonalizable** if and only if $$A=X\Lambda X^{-1}$$, where $$\Lambda$$ is a diagonal matrix and X is nonsingular.
 
-![eigenvalue decomposition]({{ site.base_url }}/assets/images/math/LinearAlg11.png)
+![eigenvalue decomposition]({{ site.baseurl }}/assets/images/math/LinearAlg11.png)
 
 - Not always exists
 
