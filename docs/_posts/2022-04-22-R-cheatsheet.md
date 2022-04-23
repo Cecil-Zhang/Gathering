@@ -4,6 +4,7 @@ date:   2022-04-22 12:00:04 -0700
 categories: 
  - Languages
 toc: true
+toc_sticky: true
 ---
 
 ## Data Types
