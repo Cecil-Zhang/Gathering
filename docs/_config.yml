@@ -1,5 +1,12 @@
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-baseurl: /Gathering
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+github: [metadata]
 defaults:
   # _posts
   - scope:
@@ -12,11 +19,29 @@ defaults:
       comments: true
       share: true
       related: true
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-github: [metadata]
+
+minimal_mistakes_skin: "sunrise" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# Site Settings
+locale                   : "en-US"
+title                    : "Gathering"
+title_separator          : "-"
+subtitle                 : "Snippets of Life"
+name                     : &name "Shuxian Zhang" # &name is a YAML anchor which can be *referenced later
+description              : &description "A place to gather what I gathered."
+url                      : https://cecil-zhang.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io
+baseurl                  : &baseurl "/Gathering"
+repository               : "Cecil-Zhang/Gathering
+"
+# Site Author
+author:
+  name             : *name # *name is a YAML reference pointing to the &anchor earlier
+  avatar           : "/assets/images/avatar.jpeg"
+  bio              : "Flow in islands."
+  location         : "Davis, CA"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Cecil-Zhang"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/shuxian-zhang"
