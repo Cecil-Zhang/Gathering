@@ -38,6 +38,7 @@ description              : &description "A place to gather what I gathered."
 url                      : https://cecil-zhang.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io
 baseurl                  : &baseurl "/Gathering"
 repository               : "Cecil-Zhang/Gathering"
+logo                     : "/assets/images/logo.png"
 
 # Site Author
 author:
