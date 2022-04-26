@@ -454,7 +454,11 @@ $$
 - Let $$A\in \mathbb{R}^{m\times n}$$ with m ≥ n and rank(A) = n. Then there exists an orthogonal matrix $$Q\in \mathbb{R}^{m\times n} (Q^TQ=I)$$, and an upper triangular matrix $$R\in \mathbb{R}^{n\times n}$$ such that $$A=QR$$
 - QR decomposition is Gram-Schmidt orthogonalization process in matrix form
 
-![Untitled]({{ QR }}/assets/images/math/LinearAlg10.png)
+![QR decomposition]({{ QR }}/assets/images/math/LinearAlg10.png)
+
+### Gram-Schmidt
+![gram-schmidt-1]({{ QR }}/assets/images/math/gramschmidt1.png)
+![gram-schmidt-1]({{ QR }}/assets/images/math/gramschmidt1.png)
 
 ### Application
 
