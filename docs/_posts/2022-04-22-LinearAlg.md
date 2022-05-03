@@ -4,19 +4,8 @@ title:  "Linear Algebra Essence"
 date:   2022-04-22 12:00:04 -0700
 categories: Math
 toc: true
+usemathjax: true
 ---
-<head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-            }
-        });
-    </script>
-</head>
 
 # Vector
 

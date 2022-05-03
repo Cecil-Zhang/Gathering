@@ -6,4 +6,5 @@
 ### Update Gem
 `bundle`
 ### Run locally
+`cd docs/`
 `bundle exec jekyll serve --baseurl ''`
