@@ -194,6 +194,8 @@ $$
 
 - A square matrix ***X*** is an **inverse** of $$A\in\mathbb{R}^{m\times m}$$ if and only if ***AX=I*** and ***XA=I***.
     - We write $$X=A^{-1}$$, ***A*** is said to be **invertible** or **nonsingular** when it has an inverse.
+- If A and B are invertible, so are $$A^{-1},A^T,AB$$
+- $$(A^{-1})^{-1}=A, (A^{-1})^{T}=(A^{T})^{-1}, (AB)^{-1}=B^{-1}A^{-1}$$
 - Theorem: the following conditions for square matrix $$A\in\mathbb{F}^{m\times m}$$ are equivalent
     - A has an inverse
     - A is a nonsingular matrix
