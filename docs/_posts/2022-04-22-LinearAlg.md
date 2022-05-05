@@ -241,10 +241,27 @@ $$
 </aside>
 
 - The determinant of a square matrix, , measuring the “volume change” produced by the corresponding linear map.
-- $$det(A)=0$$ if A’s columns are linearly dependent
-- $$det(I)=1$$
-- $$det(\text{triangular matrix})=\prod_{i=1}^m a_{ii}$
-- $$det(\alpha A)=\alpha^m det(A)$
+- Axioms
+    - Axioms1: $$\det(A)$$ is a multilinear function of the columns of A
+        - Intuition: in 3D, scale the length by *a* then add it by *b*, the volume changes to $$\alpha V + V_b$$
+
+            ![Axiom1]({{ site.baseurl }}/assets/images/math/LinearAlg-det1.png)
+            
+    - Axiom2: $$\det(A)$$ vanishes if any columns are repeated
+        - Intuition: in 3D, when a dimension collapse, the cube falls into a plane.
+
+            ![Axiom2]({{ site.baseurl }}/assets/images/math/LinearAlg-det2.png)
+            
+    - Axiom3: $$\det(I)=1$$
+- Properties
+    - Property1: Adding a multiple of another column doesn’t change the determinant
+        - $$\det(e_1,\dots,e_k+\alpha e_j,\dots, e_m)=\det(e_1,\dots,e_k,\dots, e_m)+\underbrace{\alpha\det(e_1,\dots, e_j,\dots, e_m)}_{=0}$$
+    - Property2: Swapping two adjacent columns negates
+        - $$\det(e_1,\dots,e_j+e_{j+1},e_j+e_{j+1},\dots, e_m)=\\ \underbrace{\det(e_1,\dots,e_j,e_j,\dots, e_m)}_{=0}+\det(e_1,\dots,e_j,e_{j+1},\dots,e_m)+\det(e_1,\dots,e_{j+1},e_{j},\dots,e_m)+\underbrace{\det(e_1,\dots,e_{j+1},e_{j+1},\dots, e_m)}_{=0}=0$$
+    - Property3: det(A) = 0 if A’s columns are linearly dependent
+        - $$\det(e_1,\dots,e_{m-1},\sum_{i=1}^{m-1}c_ie_i)=\sum_{i=1}^{m-1}c_i\det(e_1,\dots,e_{m-1},e_i)=0$$
+- $$\det(\text{triangular matrix})=\prod_{i=1}^m a_{ii}$$
+- $$det(\alpha A)=\alpha^m det(A)$$
 - $$det(A^T)=det(A)$$
 - $$det(AB)=det(A)det(B)$$
 - $$det(A^{-1})=\frac{1}{det(A)}$$
