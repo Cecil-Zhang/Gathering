@@ -177,7 +177,7 @@ $$
 - Properties
     - Associative: $$A(BC)=(AB)C$$
     - Distributive: $$A(B+C)=AB+AC$$
-    - Not commutative: $$AB\neq BA$
+    - Not commutative: $$AB\neq BA$$
 - Interpretation: $$\vec{u}=AB\vec{v}=C\vec{v}$$ ($$C=AB$$), matrix multiplication is the composition of linear transformation
     - The effect of first applying linear transformation ***A***, then applying linear transformation ***B***
     - Overall it is the same as applying the linear transformation ***C***.
@@ -261,9 +261,17 @@ $$
     - Axiom3: $$\det(I)=1$$
 - Properties
     - Property1: Adding a multiple of another column doesn’t change the determinant
-        - $$\det(e_1,\dots,e_k+\alpha e_j,\dots, e_m)=\det(e_1,\dots,e_k,\dots, e_m)+\underbrace{\alpha\det(e_1,\dots, e_j,\dots, e_m)}_{=0}$$
+        - $$\begin{equation}
+\begin{split}   &\det(e_1,\dots,e_k+\alpha e_j,\dots, e_m)\\&=\det(e_1,\dots,e_k,\dots, e_m)
+      +\underbrace{\alpha\det(e_1,\dots, e_j,\dots, e_m)}_{=0}
+\end{split}
+\end{equation}$$
     - Property2: Swapping two adjacent columns negates
-        - $$\det(e_1,\dots,e_j+e_{j+1},e_j+e_{j+1},\dots, e_m)=\\ \underbrace{\det(e_1,\dots,e_j,e_j,\dots, e_m)}_{=0}+\det(e_1,\dots,e_j,e_{j+1},\dots,e_m)+\det(e_1,\dots,e_{j+1},e_{j},\dots,e_m)+\underbrace{\det(e_1,\dots,e_{j+1},e_{j+1},\dots, e_m)}_{=0}=0$$
+        - $$\begin{equation}
+\begin{split}
+&\det(e_1,\dots,e_j+e_{j+1},e_j+e_{j+1},\dots, e_m)\\ &=\underbrace{\det(e_1,\dots,e_j,e_j,\dots, e_m)}_{=0}+\det(e_1,\dots,e_j,e_{j+1},\dots,e_m)\\ &+\det(e_1,\dots,e_{j+1},e_{j},\dots,e_m)+\underbrace{\det(e_1,\dots,e_{j+1},e_{j+1},\dots, e_m)}_{=0}\\ &=0
+\end{split}
+\end{equation}$$
     - Property3: det(A) = 0 if A’s columns are linearly dependent
         - $$\det(e_1,\dots,e_{m-1},\sum_{i=1}^{m-1}c_ie_i)=\sum_{i=1}^{m-1}c_i\det(e_1,\dots,e_{m-1},e_i)=0$$
 - $$\det(\text{triangular matrix})=\prod_{i=1}^m a_{ii}$$
