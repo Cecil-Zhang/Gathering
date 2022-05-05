@@ -208,6 +208,12 @@ $$
 
 ## Denotation
 
+### Trace
+
+- Sum of its diagonal element: $$tr(A)=\sum_{j=1}^m a_{jj}$$
+- Propretyies: $$tr(A+B)=tr(A)+tr(B), tr(cA)=ctr(A), tr(AB)=tr(BA)$$
+- Cyclic Property: $$tr(ABCD)=tr(BCDA)=tr(CDAB)=tr(DABC)$$
+
 ### Range / Column Space
 
 - The **range / column space** of $$A\in\mathbb{R}^{m\times n}$$ is the image of $$\mathbb{R}^n$$ under ***A***
@@ -270,11 +276,11 @@ $$
 
 - Given a square matrix $$A\in \mathbb{C}^{m\times m}$$, a nonzero vector $$\vec{x}\in \mathbb{C}^m$$ is an **eigenvector**, and $$\lambda\in \mathbb{C}$$ is its corresponding **eigenvalue**, if: $$A\vec{x}=\lambda\vec{x}$$
 - The set of all eigenvalues of A is called the matrix **spectrum** $$\Lambda(A)$$
-- More refer to [eigenvalue decomposition](https://www.notion.so/Linear-Algebra-99a9a4dacf4f4d85ad519ee30b5ceb76)
+- More refer to [eigenvalue decomposition](#eigenvalue-decomposition-1)
 
 ### Singular Value
 
-- Refer to [singular value decompostion](https://www.notion.so/Linear-Algebra-99a9a4dacf4f4d85ad519ee30b5ceb76)
+- Refer to [singular value decompostion](#singular-value-decomposition)
 
 ## Special Matrix
 
