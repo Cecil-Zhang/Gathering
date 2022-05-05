@@ -211,7 +211,7 @@ $$
 ### Trace
 
 - Sum of its diagonal element: $$tr(A)=\sum_{j=1}^m a_{jj}$$
-- Propretyies: $$tr(A+B)=tr(A)+tr(B), tr(cA)=ctr(A), tr(AB)=tr(BA)$$
+- Properties: $$tr(A+B)=tr(A)+tr(B), tr(cA)=ctr(A), tr(AB)=tr(BA)$$
 - Cyclic Property: $$tr(ABCD)=tr(BCDA)=tr(CDAB)=tr(DABC)$$
 
 ### Range / Column Space
