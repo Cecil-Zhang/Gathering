@@ -559,6 +559,6 @@ Let *r=rank(A)*, then $$A=U_r\Sigma_r V_r^T$$, where
     - Cholesky (normal equations)
         - $$A^HAx=A^Hb,\quad A^HA=LL^H$$
     - Reduced QR
-        - $$A=\hat Q\hat R,Ax=b\implies \underbrace{\hat R^H\hat Q^H}_{A^H} \underbrace{\hat Q\hat R}A x=\underbrace{\hat R^H\hat Q^H}{A^H}b\implies \hat Rx=\hat Q^Hb$$
+        - $$A=\hat Q\hat R,Ax=b\implies \underbrace{\hat R^H\hat Q^H}_{A^H} \underbrace{\hat Q\hat R}_A x=\underbrace{\hat R^H\hat Q^H}_{A^H}b\implies \hat Rx=\hat Q^Hb$$
     - Reduced SVD
-        - $$A=\hat U\hat \Sigma V^H,Ax=b\implies \underbrace{V\hat \Sigma\hat U^H}_{A^H} \underbrace{\hat U\hat \Sigma V^H}A x=\underbrace{V\hat \Sigma\hat U^H}{A^H}b\implies x=V\hat\Sigma^{-1}\hat U^Hb$$
+        - $$A=\hat U\hat \Sigma V^H,Ax=b\implies \underbrace{V\hat \Sigma\hat U^H}_{A^H} \underbrace{\hat U\hat \Sigma V^H}_A x=\underbrace{V\hat \Sigma\hat U^H}_{A^H}b\implies x=V\hat\Sigma^{-1}\hat U^Hb$$
