@@ -15,6 +15,10 @@ usemathjax: true
 
 - All vectors are column vectors by default $$\forall x \in R$$
 
+### Addition and Subtraction
+
+![Vector Addition and Subtraction]({{ site.baseurl }}/assets/images/math/vecOps.png)
+
 ### Length (norm)
 
 - $$\|\vec{a}\|_2=\sqrt{a_1^2+\cdots+a_n^2}=\sqrt{\vec{a}\cdot\vec{a}}$$ is called the length of a vector $$\vec{a}$$
@@ -26,6 +30,9 @@ usemathjax: true
 ### Dot Product
 
 - For $$\vec{a}=(a_1,\dots,a_n), \vec{b}=(b_1,\dots,b_n)\in\mathbb{R}^n$$, $$\vec{a}\cdot\vec{b}=\sum_{i=1}^na_ib_i$$
+- Projection: the length of $$\vec a$$ projection on $$\vec b$$ = $$|\vec a|\cos(\theta)=\frac{\vec a\cdot \vec b}{|\vec b|}$$
+    
+    ![projection]({{ site.baseurl }}/assets/images/math/projection.png)
 
 ### Null Space
 
