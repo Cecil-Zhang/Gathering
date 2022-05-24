@@ -34,6 +34,13 @@ usemathjax: true
     
     ![projection]({{ site.baseurl }}/assets/images/math/projection.png)
 
+### Vector Projection
+
+- The projection of $$\vec a$$ on $$\vec b$$ is $$\frac{\vec a\cdot \vec b}{\vec b \cdot \vec b}\times\vec b$$
+    - The length of $$\vec a$$ projection on $$\vec b$$ = $$|\vec a|\cos(\theta)=\frac{\vec a\cdot \vec b}{|\vec b|}$$
+    - The direction of projection is parallel to $$\vec b$$, which is $$\frac{\vec b}{|\vec b|}$$
+    - Thus, the projection vector is $$\frac{\vec a\cdot \vec b}{|\vec b|} \times \frac{\vec b}{|\vec b|}=\frac{\vec a\cdot \vec b}{|\vec b||\vec b|}\times\vec b==\frac{\vec a\cdot \vec b}{\vec b\cdot \vec b}\times\vec b$$
+
 ### Null Space
 
 - Defition: $$null(A)=\{x\vert Ax=0\}$$
