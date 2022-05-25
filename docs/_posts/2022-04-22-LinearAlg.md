@@ -37,9 +37,9 @@ usemathjax: true
 ### Vector Projection
 
 - The projection of $$\vec a$$ on $$\vec b$$ is $$\frac{\vec a\cdot \vec b}{\vec b \cdot \vec b}\times\vec b$$
-    - The length of $$\vec a$$ projection on $$\vec b$$ = $$|\vec a|\cos(\theta)=\frac{\vec a\cdot \vec b}{|\vec b|}$$
-    - The direction of projection is parallel to $$\vec b$$, which is $$\frac{\vec b}{|\vec b|}$$
-    - Thus, the projection vector is $$\frac{\vec a\cdot \vec b}{|\vec b|} \times \frac{\vec b}{|\vec b|}=\frac{\vec a\cdot \vec b}{|\vec b||\vec b|}\times\vec b==\frac{\vec a\cdot \vec b}{\vec b\cdot \vec b}\times\vec b$$
+    - The length of $$\vec a$$'s projection on $$\vec b =\lvert\vec a\rvert \cos(\theta)=\frac{\vec a\cdot \vec b}{\lvert\vec b\rvert}$$
+    - The direction of projection is parallel to $$\vec b$$, which is $$\frac{\vec b}{\lvert\vec b\rvert}$$
+    - Thus, the projection vector is $$\frac{\vec a\cdot \vec b}{\lvert\vec b\rvert} \times \frac{\vec b}{\lvert\vec b\rvert}=\frac{\vec a\cdot \vec b}{\lvert\vec b\rvert\lvert\vec b\rvert}\times\vec b==\frac{\vec a\cdot \vec b}{\vec b\cdot \vec b}\times\vec b$$
 
 ### Null Space
 
@@ -295,9 +295,16 @@ $$
 - $$det(A^{-1})=\frac{1}{det(A)}$$
 
 ### Eigenvalue and Eigenvector
-
-- Given a square matrix $$A\in \mathbb{C}^{m\times m}$$, a nonzero vector $$\vec{x}\in \mathbb{C}^m$$ is an **eigenvector**, and $$\lambda\in \mathbb{C}$$ is its corresponding **eigenvalue**, if: $$A\vec{x}=\lambda\vec{x}$$
-- The set of all eigenvalues of A is called the matrix **spectrum** $$\Lambda(A)$$
+- Given a **square** matrix $$A\in \mathbb{C}^{m\times m}$$, a nonzero vector $$\vec{x}\in \mathbb{C}^m$$ is an **eigenvector**, and $$\lambda\in \mathbb{C}$$ is its corresponding (right) **eigenvalue**, if: $$A\vec{x}=\lambda\vec{x}$$
+    - A nonzero vector *y* such that $$y^H A = \lambda y^H$$ is a left eigenvector.
+- $$p_A(\lambda) ≡ det(\lambda I − A)$$, a polynomial of degree n, is called characteristic polynomial of A.
+    - $$A\vec{x}=\lambda\vec{x} \iff (\lambda I-A)\vec{x}=0 \iff det(\lambda I-A)=0$$
+    - $$\lambda$$ is an eigenvalue if and only if it is a root of the characteristic polynomial: $$p_A(\lambda)=0$$:
+        - $$det(\begin{bmatrix}
+        \lambda-a_{11} & a_{12} \\
+        a_{21} & \lambda-a_{22}
+        \end{bmatrix})=0\iff (\lambda-a_{11})(\lambda-a_{22})-a_{12}a_{21}=\lambda^2-(a_{11}+a_{22})\lambda+a_{11}a_{22}-a_{12}a_{21}=0$$
+- The set of all eigenvalues of A is called the matrix **spectrum**
 - More refer to [eigenvalue decomposition](#eigenvalue-decomposition-1)
 
 ### Singular Value
