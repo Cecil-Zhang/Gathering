@@ -45,7 +45,7 @@ author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/avatar.jpeg"
   bio              : "Flow in islands."
-  location         : "Davis, CA"
+  location         : "Kirkland, WA"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
