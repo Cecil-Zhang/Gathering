@@ -9,3 +9,6 @@ author_profile: true
 
 ## ECS 230
 [ECS 230 - Linear Algebra.pdf]({{ site.baseurl }}/assets/pdf/ECS 230 - Linear Algebra.pdf)
+
+## Coursera Machine Learning
+[Machine Learning Notes]({{ site.baseurl }}/assets/pdf/Coursera Machine Learning(Notes).pdf)
